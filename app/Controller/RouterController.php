@@ -30,23 +30,38 @@ App::uses('Controller', 'Controller');
  * @package		app.Controller
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
-class AppController extends Controller {
+class RouterController extends AppController {
+	/**
+	 * This controller does not use a model
+	 *
+	 * @var array
+	 */
+		public $uses = array();
 
-	public function generateRandom(){
-		return round(mt_rand()/mt_getrandmax(),2);
-	}
+	/**/
 
-	public function checkDate($date){
-		$valid=false;
-		$date=explode("-",$date);
-		if(($date[0]>=1 && $date[0]<=12) && ($date[1]>=1960 && $date[1]<=2017)){
-			if($date[1]==2017 && $date[0]>1) {
-				$valid=false;
-			}else{
-				$valid=true;
-			}
+	public function disponibilidad(){
+		$this->autoRender=false;
+
+		$date=$this->request['pass'];
+
+		if(empty($date)) {
+
+			$dataToReturn=json_encode(array("error" => "BAD IS REQUEST"));
+
+		}elseif($this->checkDate($date[0])){
+
+			$name="Router";
+			$random=$this->generateRandom();
+			$dataToReturn=json_encode(array("nombre" => $name,"disponibilidad" => $random));
+			
+		}else{
+
+			$dataToReturn=json_encode(array("error" => "BAD IS REQUEST"));
+			
 		}
-		return $valid;
-	}
+		
 
+		return $dataToReturn;
+	}
 }
