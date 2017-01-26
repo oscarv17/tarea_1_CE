@@ -22,23 +22,44 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php echo $cakeDescription ?>:
-		<?php echo $this->fetch('title'); ?>
+		CEMON : Centro de Monitoreo
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic');
+	 echo $this->Html->css("bootstrap.css");
+	 echo $this->Html->script("jquery-1.9.1.min.js");
+	 echo $this->Html->script("bootstrap.min.js");
+	 echo $this->Html->script("cemon.js");
+
+
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
+
 </head>
 <body>
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">CEMON</a>
+    </div>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Salir</a></li>
+      </ul>
+  </div><!-- /.container-fluid -->
+</nav>
+
 	<div id="container">
 		<div id="header">
-			<h1>OmaServices</h1>
+			<h1 class="text-center">Bienvenido al centro de monitoreo CEMON</h1>
+			<br><br>
 		</div>
 		<div id="content">
 
@@ -46,12 +67,13 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
 			<?php echo $this->fetch('content'); ?>
 		</div>
-		<div id="footer">
-			<p>
-				OmaServices
-			</p>
+		<foter class = "footer navbar-fixed-bottom">
+			<div class="container">
+				<p class="text-muted">Hecho por: Oscar , Alvin Velazquez y Mariangelica Useche	</p>
+			</div>
+
 		</div>
-	</div>
+	</footer>
 	<?php //echo $this->element('sql_dump'); ?>
 </body>
 </html>

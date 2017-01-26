@@ -47,20 +47,20 @@ class SmbdController extends AppController {
 
 		if(empty($date)) {
 
-			$dataToReturn=json_encode(array("error" => "BAD IS REQUEST"));
+			$dataToReturn=json_encode(array("error" => "BAD REQUEST"));
 
 		}elseif($this->checkDate($date[0])){
 
 			$name="SMDB";
 			$random=$this->generateRandom();
 			$dataToReturn=json_encode(array("nombre" => $name,"disponibilidad" => $random));
-			
+
 		}else{
 
-			$dataToReturn=json_encode(array("error" => "BAD IS REQUEST"));
-			
+			$dataToReturn=json_encode(array("error" => "BAD REQUEST"));
+
 		}
-		
+
 
 		return $dataToReturn;
 	}
