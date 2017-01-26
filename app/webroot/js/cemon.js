@@ -9,16 +9,24 @@ $(document).ready(function(){
       var aplicacion = url1+"aplicacion"+url2;
       var internet = url1+"internet"+url2;
       var router = url1+"router"+url2;
-
+      $(".panel").removeClass("hidden");
       $.ajax({ dataType: "json", url: servidor,  success: function(result){
+        $("#resultados").append("<tr><td class = \"text-center\">"+result["nombre"]+"</td><td class = \"text-center\">"+result["disponibilidad"]+"</td>");
+
       }});
       $.ajax({ dataType: "json", url: smdb,  success: function(result){
+        $("#resultados").append("<tr><td class = \"text-center\">"+result["nombre"]+"</td><td class = \"text-center\">"+result["disponibilidad"]+"</td>");
+
       }});
       $.ajax({ dataType: "json", url: aplicacion,  success: function(result){
+        $("#resultados").append("<tr><td class = \"text-center\">"+result["nombre"]+"</td><td class = \"text-center\">"+result["disponibilidad"]+"</td>");
+
       }});
       $.ajax({ dataType: "json", url: internet,  success: function(result){
+        $("#resultados").append("<tr><td class = \"text-center\">"+result["nombre"]+"</td><td class = \"text-center\">"+result["disponibilidad"]+"</td>");
       }});
       $.ajax({ dataType: "json", url: router,  success: function(result){
+        $("#resultados").append("<tr><td class = \"text-center\">"+result["nombre"]+"</td><td class = \"text-center\">"+result["disponibilidad"]+"</td>");
       }});
     });
 });
