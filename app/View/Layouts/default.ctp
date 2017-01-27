@@ -69,7 +69,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		</div>
 		<foter class = "footer navbar-fixed-bottom">
 			<div class="container">
-				<p class="text-muted">Hecho por: Oscar , Alvin Velazquez y Mariangelica Useche	</p>
+				<p class="text-muted">Hecho por: Oscar Valecillos, Alvin Velazquez y Mariangelica Useche	</p>
 			</div>
 
 		</div>

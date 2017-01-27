@@ -47,15 +47,16 @@
 <div class="row">
 	<div class="col-lg-6 col-lg-offset-3">
 		<div class="panel panel-info hidden">
-				<!-- Default panel contents -->
 				<div class="panel-heading text-center ">Resultados</div>
 				<!-- Table -->
 				<table class="table" id="resultados">
-		<tr>
-			<th class = "text-center">Componente</th>
-			<th class = "text-center">Disponibilidad</th>
-		</tr>
+
 				</table>
+
+				<div class="panel-footer text-center">
+					Disponibilidad total del sistema:
+				</div>
+
 		</div>
 	</div>
 </div>
