@@ -45,6 +45,7 @@ class InternetController extends AppController {
 
 		$date=$this->request['pass'];
 
+
 		if(empty($date)) {
 
 			$dataToReturn=json_encode(array("error" => "BAD REQUEST"));

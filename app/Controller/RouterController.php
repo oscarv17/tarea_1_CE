@@ -44,6 +44,7 @@ class RouterController extends AppController {
 		$this->autoRender=false;
 
 		$date=$this->request['pass'];
+	
 
 		if(empty($date)) {
 

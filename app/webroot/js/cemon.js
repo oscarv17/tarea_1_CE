@@ -8,7 +8,7 @@ $(document).ready(function(){
       $("#monitor").addClass("hidden");
 
       $(".cont").removeClass("hidden");
-      //var url1 = "http://localhost/tarea_1_CE/";
+      //var url1 = "http://localhost/tarea_1_CE/"; //aqui ponen el dominio
       var url2 = "/disponibilidad/"+$("#mes").val()+"-"+$("#anio").val();
 
       var servidor ="servidor"+url2;
@@ -73,7 +73,6 @@ $(document).ready(function(){
           $("#resultados").append("<tr><td class = \"text-center\">"+"Router"+"</td><td class = \"text-center\">No se recibió información del componente</td>");}
         });
 
-      console.log(error);
 
       if(error==1){
         $(".panel-footer").append(disponTotal);
