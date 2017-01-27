@@ -45,6 +45,7 @@ class ServidorController extends AppController {
 
 		$date=$this->request['pass'];
 
+
 		if(empty($date)) {
 
 			$dataToReturn=json_encode(array("error" => "BAD REQUEST"));
@@ -60,7 +61,6 @@ class ServidorController extends AppController {
 			$dataToReturn=json_encode(array("error" => "BAD REQUEST"));
 
 		}
-
 
 		return $dataToReturn;
 	}

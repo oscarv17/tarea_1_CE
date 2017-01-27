@@ -44,6 +44,7 @@ class SmbdController extends AppController {
 		$this->autoRender=false;
 
 		$date=$this->request['pass'];
+	
 
 		if(empty($date)) {
 
@@ -60,6 +61,7 @@ class SmbdController extends AppController {
 			$dataToReturn=json_encode(array("error" => "BAD REQUEST"));
 
 		}
+		
 
 
 		return $dataToReturn;

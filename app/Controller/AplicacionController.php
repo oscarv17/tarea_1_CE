@@ -45,26 +45,21 @@ class AplicacionController extends AppController {
 
 		$date=$this->request['pass'];
 
-		$disp=$this->generateRandom();
+		if(empty($date)) {
 
-		if($disp>0 ){
-			if(empty($date)) {
+			$dataToReturn=json_encode(array("error" => "BAD REQUEST"));
 
-				$dataToReturn=json_encode(array("error" => "BAD REQUEST"));
+		}elseif($this->checkDate($date[0])){
 
-			}elseif($this->checkDate($date[0])){
+			$name="Aplicacion";
+			$random=$this->generateRandom();
+			$dataToReturn=json_encode(array("nombre" => $name,"disponibilidad" => $random));
 
-				$name="Aplicacion";
-				$random=$this->generateRandom();
-				$dataToReturn=json_encode(array("nombre" => $name,"disponibilidad" => $random));
+		}else{
 
-			}else{
+			$dataToReturn=json_encode(array("error" => "BAD REQUEST"));
 
-				$dataToReturn=json_encode(array("error" => "BAD REQUEST"));
-
-			}
 		}
-
 
 		return $dataToReturn;
 	}
