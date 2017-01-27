@@ -76,10 +76,10 @@ $(document).ready(function(){
       console.log(error);
 
       if(error==1){
-        $(".panel-footer").empty().append(disponTotal);
+        $(".panel-footer").append(disponTotal);
         error=0;
       }else{
-        $(".panel-footer").empty().append('<h3>Ha ocurrido un error con la fecha, verif&iacute;quela</h3>');        
+        $(".panel-footer").empty().append('<h3>Ha ocurrido un error con la fecha, verif&iacute;quela</h3>');
       }
 
     });
