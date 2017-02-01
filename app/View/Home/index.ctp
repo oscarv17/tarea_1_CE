@@ -1,3 +1,4 @@
+<!--
 <div class="container">
 	<div class="col-lg-6 col-lg-offset-3 formu">
 		<form>
@@ -25,7 +26,7 @@
 					<option value="2004">2004</option>
 					<option value="2005">2005</option>
 					<option value="2006">2006</option>
-					<option value="2007">2007</op tion>
+					<option value="2007">2007</option>
 					<option value="2008">2008</option>
 					<option value="2009">2009</option>
 					<option value="2010">2010</option>
@@ -49,7 +50,6 @@
 	<div class="col-lg-6 col-lg-offset-3">
 		<div class="panel panel-info ">
 				<div class="panel-heading text-center ">Resultados</div>
-				<!-- Table -->
 				<table class="table" id="resultados">
 
 				</table>
@@ -62,23 +62,22 @@
 			<a href="/" class = "btn btn-info">Volver</a>
 	</div>
 </div>
-
-
-<!--
-
-<p>
-	<span class="notice success">Para ver disponibilidad del servidor: <a href='<?php echo "http://".$_SERVER['SERVER_NAME']."/tarea_1_CE/servidor/disponibilidad/".date('m-Y'); ?>'><?php echo "http://".$_SERVER['SERVER_NAME']."/tarea_1_CE/servidor/disponibilidad/mes-año"; ?></a></span>
-</p>
-<p>
-	<span class="notice success">Para ver disponibilidad del smbd: <a href='<?php echo "http://".$_SERVER['SERVER_NAME']."/smbd/disponibilidad/".date('m-Y'); ?>'></a><?php echo "http://".$_SERVER['SERVER_NAME']."/smbd/disponibilidad/mes-año"; ?></span>
-</p>
-<p>
-	<span class="notice success">Para ver disponibilidad de la aplicaci&oacute;n: <a href='<?php echo "http://".$_SERVER['SERVER_NAME']."/aplicacion/disponibilidad/".date('m-Y'); ?>'></a><?php echo "http://".$_SERVER['SERVER_NAME']."/aplicacion/disponibilidad/mes-año"; ?></span>
-</p>
-<p>
-	<span class="notice success">Para ver disponibilidad del router: <a href='<?php echo "http://".$_SERVER['SERVER_NAME']."/router/disponibilidad/".date('m-Y'); ?>'></a><?php echo "http://".$_SERVER['SERVER_NAME']."/router/disponibilidad/mes-año"; ?></span>
-</p>
-<p>
-	<span class="notice success">Para ver disponibilidad del internet: <a href='<?php echo "http://".$_SERVER['SERVER_NAME']."/internet/disponibilidad/".date('m-Y'); ?>'></a><?php echo "http://".$_SERVER['SERVER_NAME']."/internet/disponibilidad/mes-año"; ?></span>
-</p>
 -->
+
+
+<p>
+	<span class="notice success">Para ver disponibilidad del servidor: /servidor/disponibilidad/mes-año</span>
+</p>
+<p>
+	<span class="notice success">Para ver disponibilidad del smbd: /smbd/disponibilidad/mes-año</span>
+</p>
+<p>
+	<span class="notice success">Para ver disponibilidad de la aplicaci&oacute;n: /aplicacion/disponibilidad/mes-año</span>
+</p>
+<p>
+	<span class="notice success">Para ver disponibilidad del router: /router/disponibilidad/mes-año"</span>
+</p>
+<p>
+	<span class="notice success">Para ver disponibilidad del internet: /internet/disponibilidad/mes-año</span>
+</p>
+
