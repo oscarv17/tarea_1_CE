@@ -22,7 +22,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		CEMON : Centro de Monitoreo
+		OMA SERVICES
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
@@ -48,7 +48,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <a class="navbar-brand" href="<?php echo "http://".$_SERVER['SERVER_NAME']."/tarea_1_CE/"; ?>">CEMON</a>
+      <a class="navbar-brand" href="/">Servicios OMA</a>
     </div>
 
       <ul class="nav navbar-nav navbar-right">
