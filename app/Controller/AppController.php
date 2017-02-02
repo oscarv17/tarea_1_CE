@@ -32,6 +32,10 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
+	public function beforeFilter(){
+		$this->response->header('Access-Control-Allow-Origin', '*');
+	}
+
 	public function generateRandom(){
 		return round(mt_rand()/mt_getrandmax(),2);
 	}
