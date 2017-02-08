@@ -48,7 +48,7 @@ class InternetController extends AppController {
 
 		if(empty($date)) {
 
-			$dataToReturn=json_encode(array("error" => "BAD REQUEST"));
+			$dataToReturn=json_encode(array("error" => "REQUEST IS BAD"));
 
 		}elseif($this->checkDate($date[0])){
 
@@ -58,7 +58,7 @@ class InternetController extends AppController {
 
 		}else{
 
-			$dataToReturn=json_encode(array("error" => "BAD REQUEST"));
+			$dataToReturn=json_encode(array("error" => "REQUEST IS BAD"));
 
 		}
 
